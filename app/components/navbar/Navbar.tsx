@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import SearchFilters from './SearchFilters';
+import UserNav from './UserNav';
+import AddPropertyButton from './AddPropertyButton';
 
 const Navbar = () => {
     return (
@@ -22,7 +24,9 @@ const Navbar = () => {
                     </div>
 
                     <div className='flex items-center space-x-6'>
-                        Add propety - User nav
+                        <AddPropertyButton />
+
+                        <UserNav />
                     </div>
                 </div>
             </div>
